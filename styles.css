@@ -1,0 +1,307 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+  
+header{
+    display: flex;
+    background-color: rgb(75, 73, 73);
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 0em;
+
+}
+
+header nav ul a{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 1em;
+
+}
+
+header nav label{
+  color: white;
+
+}
+
+header a{
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+
+}
+
+.presentacion{
+  display: flex;
+  font-size: 20px;
+  align-items: start;
+}
+
+.informacion1{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  align-items: end;
+}
+
+.img1{
+  width: 60%;
+  margin: 10%;
+  border-radius: 10%;
+}
+
+.titulo{
+  font-size: 35px;
+  text-align: right;
+}
+
+.personal{
+  display: flex;
+  text-align: justify;
+  width: 50%; 
+}
+
+.img3{
+  width: 100%;
+}
+
+.vista{
+  width: 25%;
+  height: fit-content;
+  margin: 4%;
+  display: inline-block;
+  justify-content: center;
+}
+
+.trabajo1{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img2{
+  align-items: flex-start;
+  width: 85%;
+  border-radius: 10%
+}
+
+#Trabajos{
+  display: flex;
+  justify-content: center;
+}
+
+.informacion2{
+  font-optical-sizing: auto;
+  font-size: 15px;
+  margin: 5%;
+  margin-bottom: 30%;
+  text-align: center;
+  flex-direction: column;
+}
+
+footer{
+ display: flex;
+ background-color: rgb(75, 73, 73);
+ flex-direction: column;
+ padding: 50px;
+ text-align: center;
+ font-size: 1em;
+}
+
+.imag4{
+  width: 20px;
+}
+
+.checkbtn{
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+}
+
+#check{
+  display: none;
+}
+
+.body{
+  font-size: 16px;
+    
+}
+
+@media (max-width: 768px) {
+  
+  .checkbtn {
+   display: block; /* Mostrar el ícono de hamburguesa en dispositivos celular */
+  }
+  
+  .checkbtn i {
+   font-size: 1em;
+  }
+
+  #check:checked ul{
+    display: block;
+    left: 0;
+  }
+
+  header a{
+    font-size: 2em;
+    padding: 10px;
+  }
+  
+  header nav ul li {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    top: 80%;
+    left: 100%;
+    background-color: aqua;
+    transition: all 0.5s;
+  }
+
+  .presentacion{
+    display: flex;
+    text-align: start;
+
+  }
+
+  .personal {
+    font-size: 20px;
+    font-kerning: auto;
+    display: flex;
+    text-align: right;
+    align-content: stretch;
+    margin: 5%;
+  }
+
+  .informacion1{
+    align-items: end; 
+  }
+
+  .titulo {
+    display: flex;
+    text-align: right;
+    font-size: 20px;
+    
+  }
+
+  .img1 {
+    width: 80%;
+    margin: 12%;
+    
+  }
+    
+  .trabajo1 {
+   display: flex; /* Mostrar elementos de lista en línea */
+   width: 100%; /* Ancho del elemento de lista */
+   margin: 15%; /* Margen entre elementos */
+   text-align: center; /* Alinear texto al centro */
+   vertical-align: auto; /* Alinear elementos verticalmente arriba */
+   flex-direction: column;
+  }
+  
+  .vista {
+   width: 170px; /* Ancho de la imagen */
+   height: 190px; /* Altura de la imagen */
+   border-radius: 5px; /* Borde redondeado */
+  }
+  
+  .vista {
+   width: 190px; /* Ancho de la imagen */
+   height: 190px; /* Altura de la imagen */
+   margin: 1 auto 10px; /* Margen inferior */
+   display: flex; /* Mostrar como bloque */
+   flex-direction: column;
+   border-radius: 5px; /* Borde redondeado */
+  }
+
+}
+
